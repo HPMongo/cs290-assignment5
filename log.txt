@@ -1,3 +1,7 @@
+Start: Thu, 7 May 2015 21:00:33 -0500 
+End: Fri, 8 May 2015 00:15:33 -0500 
+Tasks: During this time, I worked on the design and create a prototype layout for the main page as well as how the data should interact. I also duplicated the database to local machine for testing. I was able to connect to the database successfully and retrieve results from the table.
+
 Start: Wed, 6 May 2015 21:50:33 -0500 
 End: Wed, 6 May 2015 22:40:33 -0500 
 Tasks: Created repo and added the new video inventory table.
