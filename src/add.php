@@ -103,7 +103,7 @@
 // 	Close the database connection
 			$mysqli->close();
 //	Redirect to homepage
-			header('Location: index.php');
+//			header('Location: index.php');
 		} else {
 // 	Close the database connection
 			$mysqli->close();

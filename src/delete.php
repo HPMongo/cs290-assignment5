@@ -5,24 +5,23 @@
 <?php
 	function deleteItem($inItem) {
 		include 'login.php';
-		echo 'Connecting... ';
+//	Connect to the database
 		$mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 		
 		if (mysqli_connect_error()) {
 		    die('Connect Error (' . mysqli_connect_errno() . ') '
 		            . mysqli_connect_error());
 		}
-	//debug
-		echo 'Success... ' . $mysqli->host_info . "<br>";
-
+//	Proceed with the deletion
 		$sql="DELETE FROM video_inventory WHERE id = '$inItem';";
 
 		if(mysqli_query($mysqli, $sql)) {
-			echo "Record deleted!<br>";
-			header ""
+		//The deletion is successful, redirect to home page
+			header ('Location: index.php');
 		} else {
 			echo "Error: ".$sql."<br>".mysql_error($mysqli);
 		}
+		$mysqli->close();
 	}
 
 	if(isset($_GET['id'])) {
