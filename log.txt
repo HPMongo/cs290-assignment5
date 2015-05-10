@@ -1,7 +1,35 @@
+Start: Sun, 10 May 2015 10:34:20 -0500 
+End: Sun, 10 May 2015 12:34:20 -0500 
+Tasks: Add delete all button to delete all videos in the library. Update display script since the category drop down menu is not working correctly with Sarafi or FireFox. Update the CCS file with some minor formatting change. All functionalities are working (locally) at this point. 
+
+Start: Sun, 10 May 2015 01:16:07 -0500 
+End: Sun, 10 May 2015 02:06:07 -0500 
+Tasks: Add the ablitity to storeselected value within the session info. Alter display script to fetch for the category value in the session and populate the result accordingly. Everything works up to this point. Still need to clean up some display and debug codes in display.php. 
+
+Start: Sat, 10 May 2015 22:40:10 -0500 
+End: Sun, 10 May 2015 01:14:10 -0500 
+Tasks: Add drop down menu for Category header (filter). Still need to clean up the logic and make the homepage more dynamic - i.e. reload the table based on the drop down select. 
+
+Start: Sat, 9 May 2015 20:35:12 -0500 
+End: Sat, 9 May 2015 22:35:12 -0500 
+Tasks: Split add and display function from data.php into add and display scripts. Add update.php to update the availability status. Update syntax and layout for homepage and delete scripts. 
+
+Start: Sat, 9 May 2015 11:47:29 -0500 
+End: Sat, 9 May 2015 19:47:29 -0500 
+Tasks: Update the main page to allow adding new data to the database. In the data.php script, add main function to validate inputs for add entry and allow displaying all the records in the table. Delete.php handles any entry deletion. 
+
+Start: Fri, 7 May 2015 00:16:00 -0500 
+End: Fri, 8 May 2015 00:18:19 -0500 
+Tasks: Update main page, data page, stylesheet. Able to connect to local database and retrieve data back. 
+
 Start: Thu, 7 May 2015 21:00:33 -0500 
 End: Fri, 8 May 2015 00:15:33 -0500 
 Tasks: During this time, I worked on the design and create a prototype layout for the main page as well as how the data should interact. I also duplicated the database to local machine for testing. I was able to connect to the database successfully and retrieve results from the table.
 
-Start: Wed, 6 May 2015 21:50:33 -0500 
+Start: Wed, 6 May 2015 22:44:17 -0500 
+End: Wed, 6 May 2015 22:44:17 -0500 
+Tasks: Create the git repo and add the table for video inventory on the server. 
+
+Start: Wed, 6 May 2015 22:40:33 -0500 
 End: Wed, 6 May 2015 22:40:33 -0500 
-Tasks: Created repo and added the new video inventory table.
+Tasks: Initial commit
