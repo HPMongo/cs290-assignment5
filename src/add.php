@@ -74,12 +74,15 @@
 	function addVideo($inArr, $inConn) {
 		$sql = "INSERT INTO video_inventory (name, category, length, rented) VALUES ('$inArr[0]', '$inArr[1]', '$inArr[2]', '$inArr[3]');";
 		if(mysqli_query($inConn, $sql)) {
-			echo "Record added!<br>";
+// 	Close the database connection
+			$mysqli->close();
+//	Redirect to homepage after the success add
+			header('Location: index.php');
 		} else {
-			echo "Error: ".$sql."<br>";
-			echo "Error code:".mysqli_error($inConn)."<br>";
+		//	echo "Error: ".$sql."<br>";
+		//	echo "Error code:".mysqli_error($inConn)."<br>";
 			$inConn->close();
-			echo "There are errors with the input. Click <a href='index.php'> here</a> to go back and correct your entry.<br>";
+			echo "It looks like we already have this title in the library. Click <a href='index.php'> here</a> to go back and correct your entry or add a different title.<br>";
 		}
 	}
 
@@ -97,13 +100,7 @@
 //	Add new entry to the table
 	if(isset($_POST['addVid'])) {
 		if(addValidate($addArray)) {
-			echo "All is good! Proceed with table update";
-			echo "Array: ".$addArray[0]."-".$addArray[1]."-".$addArray[2]."-".$addArray[3]."<br>";
 			addVideo($addArray, $mysqli);
-// 	Close the database connection
-			$mysqli->close();
-//	Redirect to homepage
-//			header('Location: index.php');
 		} else {
 // 	Close the database connection
 			$mysqli->close();

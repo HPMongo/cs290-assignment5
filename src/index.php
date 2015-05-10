@@ -13,14 +13,18 @@
 	<body>
 		<h4>Add video to the collection</h4>
 		<form action="add.php" method="post">
-			Title: <input type="text" name="title"><br>
-			Category: <input type="text" name="cat"><br>
-			Run time: <input type="text" name="time"><br>
-			Availability: 	<input type="radio" name="status" value="0"> Checked out
-							<input type="radio" name="status" value="1"> Available<br>
+			<label>Title: </label><input id="1" type="text" name="title"><br>
+			<label>Category: </label><input id="1" type="text" name="cat"><br>
+			<label>Run time: </label><input id="1" type="text" name="time"><br>
+			<label>Availability: </label>
+				<input type="radio" name="status" value="0"> Checked out
+				<input type="radio" name="status" value="1"> Available<br>
 			<input type="submit" name="addVid" value="Add">
 		</form>
 		<hr>
 		<?php include 'display.php';?>
+		<form action="delete_all.php" method="post">
+			<input type="submit" value="Delete all videos??" onCLick="return confirm('Are you SURE you want to delete all videos?')">
+		</form>
 	</body>
 </html>
