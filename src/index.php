@@ -21,6 +21,6 @@
 			<input type="submit" name="addVid" value="Add">
 		</form>
 		<hr>
-		<?php include 'display.php'?>
+		<?php include 'display.php';?>
 	</body>
 </html>
